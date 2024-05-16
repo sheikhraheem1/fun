@@ -1,0 +1,47 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url(couple-city.jpg) no-repeat center/cover fixed;
+    
+
+ }
+
+ 
+ 
+ #main{
+    position: relative;
+    width: 500px;
+    height: 450px;
+    border: 2px solod #f50909;
+    overflow: hidden;
+    margin-left: 550px;
+    margin-top: 9%;
+    
+
+   
+}
+#no{
+    position: absolute;
+    left: 100px;
+    /* background-color: blueviolet; */
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: top 0.5s ,left 0.5s;
+    padding: 50px;
+}
+#yes{
+    /* position: absolute; */
+    left: 100px;
+    padding: 50px;
+    background-color:rgb(221, 23, 23);
+    border: none;
+    width: 90px;
+    border-radius: 10px;
+    font-size: 35px;
+    cursor: pointer;
+    transition: top 0.5s ,left 0.5s;
+}

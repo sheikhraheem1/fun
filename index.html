@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>fun </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="main">
+
+    <div class="box">
+      <h1 class="question">Do you love me?❤️</h1>
+      <button id="no">No</button>
+      <button id="yes">Yes</button>
+    
+    </div>
+  </div>
+<script>
+const no=document.getElementById("no");
+function moveno(){
+  const maxwidth=400;
+  const maxheight=400;
+
+  const randomX =Math.floor(Math.random()*maxwidth);
+  const randomY = Math.floor(Math.random()*(maxheight+50));
+
+  no.style.left=randomX+"px";
+  no.style.top=randomY+"px";
+}
+// no.addEventListener('click',moveno)
+no.addEventListener("mouseenter",function(){moveno()})
+const yes=document.getElementById("yes");
+const question=document.querySelector(".question");
+yes.addEventListener("click",()=>{question.innerHTML="I love you too 😍"});
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
